@@ -9,11 +9,11 @@ def app():
     ranking = st.number_input('School ranking:', 0, 10, value=7, step=1)
     preference = st.number_input('Top preference:', 0.0, 0.150, value=0.010, step=0.005)
 
-    data = query_db( housing, ranking, preference)
-    if len(data) == 0:
-        st.write('Your query returned no results, please try again!')
-    else:
-        st.write('Thank you!')
+#    data = query_db( housing, ranking, preference)
+#    if len(data) == 0:
+#        st.write('Your query returned no results, please try again!')
+#    else:
+#        st.write('Thank you!')
 
 if __name__ == '__main__':
     app()
